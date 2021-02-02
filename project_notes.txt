@@ -1,0 +1,75 @@
+Hi Sourav, if iFrames can be avoided it's even better. Below is a more lengthy / detailed description of the same task. Basically I just want to combine/mix multiple HTML blocks together. Those HTML blocks are mostly either charts or images. Some sample charts are as follows. The first one I copied from a tool called Datawrapper, the second one from Grafana. If these can be displayed with jquery it's even better.
+
+- Example HTML code blocks:
+    One example (Ideally the expectation would be just to paste this in without the need to understand it):
+    <iframe title="GSE Composite Index" aria-label="Interactive line chart" id="datawrapper-chart-Au848" src="https://datawrapper.dwcdn.net/Au848/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="382"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+    Another example:
+   
+    <iframe src="https://thanhson.grafana.net/dashboard-solo/new?orgId=1&from=1611792201933&to=1611813801933&panelId=2" width="450" height="200" frameborder="0"></iframe>
+
+The more lengthy description (feel free to edit/comment/suggest alternatives):
+
+I want to automate the copy/paste/mix of a bunch of HTML code blocks together on a simple HTML page. The HTML code blocks are in essence the embedded iframes etc. displaying graphics / images / javascript charts such as D3JS. So the task would be:
+
+Build a script and a PWA web / generate apps (iOS, Android) to display diagrams/images & javascript charts:
+
+The script (Linux, or a HTML/JS/PHP page etc.):
+- Generate an HTML file(s) from an input config file.
+- Each HTML file will be identified by a serial number (could be the file name itself. Lets say: 34334adsf429.html)
+- The template of the file would be something easy looking. Any framework / template is fine. https://metroui.org.ua/ is something nice.
+- Structure of the config/input file:
+    SerialNr1, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x
+    SerialNr2, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x
+    SerialNr3, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x
+    SerialNr4, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x
+    SerialNr5, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x, chart-id-x
+- There should be a part for me to declare what chart-id-x equals which HTML block:
+    chart-id-x, [HTML Block 1]
+    chart-id-x, [HTML Block 2]
+    chart-id-x, [HTML Block 3]
+    chart-id-x, [HTML Block 4]
+    chart-id-x, [HTML Block 5]
+    chart-id-x, [HTML Block 6]
+    ..............
+    chart-id-x, [HTML Block n]
+
+- Once the script is executed, the script will create the output HTML files: SerialNr1.html, SerialNr2.html, SerialNr3.html .....
+
+Output: The output HTML file:
+- Structure of the HTML file: simple:
+    [HTML Block 1]
+    [HTML Block 2]
+    [HTML Block 3]
+    [HTML Block 4]
+    [HTML Block 5]
+    [HTML Block 6]
+    ..............
+    [HTML Block n]
+    where the [HTML Block x] is just a piece of HTML code/iframe to display a chart (such as D3JS) / image.
+   
+    The HTML block contents are not the scope of this task. Basically those will be embeded chart blocks, being prepared somewhere else.
+The PWA web/app:
+- Has one first page / landing with just one box: Ask for a serial number (a random number created by the script above)
+- When someone entered the serial number, the app will remember that and will not ask again (unless uninstalled, or better: have a button to allow changing the serial number)
+- Since that moment onwards, whenever the user visit the page (or open the pwa app), the app will just display that page: 34334adsf429.html
+
+Requirements for PWA:
+- Cache-first. Can work completely offline.
+- Has a notification in the app when there is newer data online. But it only refresh if the user clicks a REFRESH button.
+
+- Example HTML code blocks:
+    One example (Ideally the expectation would be just to paste this in without the need to understand it):
+    <iframe title="GSE Composite Index" aria-label="Interactive line chart" id="datawrapper-chart-Au848" src="https://datawrapper.dwcdn.net/Au848/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="382"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+    Another example:
+   
+    <iframe src="https://thanhson.grafana.net/dashboard-solo/new?orgId=1&from=1611792201933&to=1611813801933&panelId=2" width="450" height="200" frameborder="0"></iframe>
+
+
+So that's the goal: mixing multiple HTML blocks / displaying multiple charts together which were generated in other systems such as grafana or Datawrapper. Feel free to suggest ways to get this done.
+
+
+Yes the script runs on the server. It generates a bunch of file. Lets say your file is: nid123456.html, my file is: VNID123456.html sth like that. Then those whole bunch of pages become the PWA app, each user accesses his/her page. Just a dead simple way of personalization (so alternatives are welcomed). Each such .html file is just a mix of various html code blocks (could be iframe or jQuery etc. just to display the various charts that I get from outside).
+
+
