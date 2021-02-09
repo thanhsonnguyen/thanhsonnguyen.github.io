@@ -72,4 +72,5 @@ So that's the goal: mixing multiple HTML blocks / displaying multiple charts tog
 
 Yes the script runs on the server. It generates a bunch of file. Lets say your file is: nid123456.html, my file is: VNID123456.html sth like that. Then those whole bunch of pages become the PWA app, each user accesses his/her page. Just a dead simple way of personalization (so alternatives are welcomed). Each such .html file is just a mix of various html code blocks (could be iframe or jQuery etc. just to display the various charts that I get from outside).
 
-
+http://demo.edu.vn/divi/
+https://www.topcoder.com/thrive/articles/Getting%20Started%20With%20%20Progressive%20Web%20Apps%20(PWA

@@ -1,9 +1,27 @@
 {
-    "chart-id-1": "[HTML Block 1]",
-    "chart-id-2": "[HTML Block 2]",
-    "chart-id-3": "[HTML Block 3]",
-    "chart-id-4": "[HTML Block 4]",
-    "chart-id-5": "[HTML Block 5]",
-    "chart-id-6": "[HTML Block 6]",
-    "chart-id-7": "[HTML Block n]"
+    "chart-id-1": {
+        "type": "data",
+        "content": "<div class='vc_chart vc_line-chart wpb_content_element' data-vc-legend='1' data-vc-tooltips='1' data-vc-animation='easeinOutCubic' data-vc-type='bar' data-vc-values='{&quot;labels&quot;:[&quot;D\u1ec7t May&quot;,&quot; Da Gi\u00e0y&quot;,&quot; H\u00f3a Ch\u1ea5t&quot;,&quot; Nh\u1ef1a&quot;,&quot; Th\u00e9p&quot;,&quot; C\u01a1 Kh\u00ed Ch\u1ebf T\u1ea1o&quot;,&quot; N\u0103ng L\u01b0\u1ee3ng&quot;,&quot; \u0110i\u1ec7n T\u1eed&quot;,&quot; Th\u01b0\u01a1ng M\u1ea1i&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;2018&quot;,&quot;fillColor&quot;:[&quot;#79b2e8&quot;,&quot;#5aa1e3&quot;],&quot;strokeColor&quot;:&quot;#3b90de&quot;,&quot;pointColor&quot;:[&quot;#79b2e8&quot;,&quot;#5aa1e3&quot;],&quot;pointStrokeColor&quot;:[&quot;#79b2e8&quot;,&quot;#5aa1e3&quot;],&quot;highlightFill&quot;:[&quot;#5fa3e4&quot;,&quot;#4092df&quot;],&quot;highlightStroke&quot;:&quot;#237ed2&quot;,&quot;pointHighlightFill&quot;:&quot;#237ed2&quot;,&quot;pointHighlightStroke&quot;:&quot;#237ed2&quot;,&quot;data&quot;:[&quot;82.62&quot;,&quot; 64.04&quot;,&quot; 213.04&quot;,&quot; 160.91&quot;,&quot; 172.58&quot;,&quot; 148.72&quot;,&quot; 359.22&quot;,&quot; 127.72&quot;,&quot; 164.07&quot;]},{&quot;label&quot;:&quot;2017&quot;,&quot;fillColor&quot;:[&quot;#f9cd8a&quot;,&quot;#f7be68&quot;],&quot;strokeColor&quot;:&quot;#f5af46&quot;,&quot;pointColor&quot;:[&quot;#f9cd8a&quot;,&quot;#f7be68&quot;],&quot;pointStrokeColor&quot;:[&quot;#f9cd8a&quot;,&quot;#f7be68&quot;],&quot;highlightFill&quot;:[&quot;#f7c06d&quot;,&quot;#f5b14b&quot;],&quot;highlightStroke&quot;:&quot;#f3a024&quot;,&quot;pointHighlightFill&quot;:&quot;#f3a024&quot;,&quot;pointHighlightStroke&quot;:&quot;#f3a024&quot;,&quot;data&quot;:[&quot;75.23&quot;,&quot; 65.19&quot;,&quot; 222.08&quot;,&quot; 140.64&quot;,&quot; 172.65&quot;,&quot; 146.44&quot;,&quot; 346.29&quot;,&quot; 134.58&quot;,&quot; 150.60&quot;]}]}'><h2 class='wpb_heading'><font style='vertical-align: inherit;'><font style='vertical-align: inherit;'>Average Chart of Labor Productivity (million VND)</font></font></h2><div class='wpb_wrapper'><div class='vc_chart-with-legend'><canvas class='vc_line-chart-canvas' width='677' height='677' style='width: 542px; height: 542px;'></canvas></div><ul class='vc_chart-legend'><li><span style='background-color: rgb(90, 161, 227); --darkreader-inline-bgcolor:#18568f;' data-darkreader-inline-bgcolor=''></span><font style='vertical-align: inherit;'><font style='vertical-align: inherit;'>2018</font></font></li><li><span style='background-color: rgb(247, 190, 104); --darkreader-inline-bgcolor:#8b5707;' data-darkreader-inline-bgcolor=''></span><font style='vertical-align: inherit;'><font style='vertical-align: inherit;'>2017</font></font></li></ul></div></div>"
+    },
+    "chart-id-2": {
+        "type": "data",
+        "content": "<div class='vc_chart vc_line-chart wpb_content_element' data-vc-legend='1' data-vc-tooltips='1' data-vc-animation='easeinOutCubic' data-vc-type='bar' data-vc-values='{&quot;labels&quot;:[&quot;D\u1ec7t May&quot;,&quot; Da Gi\u00e0y&quot;,&quot; H\u00f3a Ch\u1ea5t&quot;,&quot; Nh\u1ef1a&quot;,&quot; Th\u00e9p&quot;,&quot; C\u01a1 Kh\u00ed Ch\u1ebf T\u1ea1o&quot;,&quot; N\u0103ng L\u01b0\u1ee3ng&quot;,&quot; \u0110i\u1ec7n T\u1eed&quot;,&quot; Th\u01b0\u01a1ng M\u1ea1i&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;2018&quot;,&quot;fillColor&quot;:[&quot;#79b2e8&quot;,&quot;#5aa1e3&quot;],&quot;strokeColor&quot;:&quot;#3b90de&quot;,&quot;pointColor&quot;:[&quot;#79b2e8&quot;,&quot;#5aa1e3&quot;],&quot;pointStrokeColor&quot;:[&quot;#79b2e8&quot;,&quot;#5aa1e3&quot;],&quot;highlightFill&quot;:[&quot;#5fa3e4&quot;,&quot;#4092df&quot;],&quot;highlightStroke&quot;:&quot;#237ed2&quot;,&quot;pointHighlightFill&quot;:&quot;#237ed2&quot;,&quot;pointHighlightStroke&quot;:&quot;#237ed2&quot;,&quot;data&quot;:[&quot;255.46&quot;,&quot; 181.14&quot;,&quot; 1435.79&quot;,&quot; 926.27&quot;,&quot; 2220.55&quot;,&quot; 851.90&quot;,&quot; 1595.86&quot;,&quot; 721.69&quot;,&quot; 2906.55&quot;]},{&quot;label&quot;:&quot;2017&quot;,&quot;fillColor&quot;:[&quot;#f6736f&quot;,&quot;#f4524d&quot;],&quot;strokeColor&quot;:&quot;#f2312b&quot;,&quot;pointColor&quot;:[&quot;#f6736f&quot;,&quot;#f4524d&quot;],&quot;pointStrokeColor&quot;:[&quot;#f6736f&quot;,&quot;#f4524d&quot;],&quot;highlightFill&quot;:[&quot;#f45752&quot;,&quot;#f23630&quot;],&quot;highlightStroke&quot;:&quot;#eb150e&quot;,&quot;pointHighlightFill&quot;:&quot;#eb150e&quot;,&quot;pointHighlightStroke&quot;:&quot;#eb150e&quot;,&quot;data&quot;:[&quot;217.84&quot;,&quot; 163.54&quot;,&quot; 1408.18&quot;,&quot; 816.23&quot;,&quot; 1622.68&quot;,&quot; 768.73&quot;,&quot; 1289.65&quot;,&quot; 723.00&quot;,&quot; 2701.01&quot;]}]}'><h2 class='wpb_heading'>Biểu đồ trung bình Doanh Thu Lao Động (triệu VNĐ)</h2><div class='wpb_wrapper'><div class='vc_chart-with-legend'><canvas class='vc_line-chart-canvas' width='677' height='677' style='width: 542px; height: 542px;'></canvas></div><ul class='vc_chart-legend'><li><span style='background-color: rgb(90, 161, 227); --darkreader-inline-bgcolor:#18568f;' data-darkreader-inline-bgcolor=''></span>2018</li><li><span style='background-color: rgb(244, 82, 77); --darkreader-inline-bgcolor:#9b0e0a;' data-darkreader-inline-bgcolor=''></span>2017</li></ul></div></div>"
+    },
+    "chart-id-3": {
+        "type": "iframe",
+        "content": "https://metabase.dwh.abnasia.org/public/question/12ec79a2-ef46-41a2-a8ff-49d4ebf22f05"
+    },
+    "chart-id-4": {
+        "type": "iframe",
+        "content": "https://datawrapper.dwcdn.net/Au848/1/"
+    },
+    "chart-id-5": {
+        "type": "image",
+        "content": "../images/created_at_bar_days.png "
+    },
+    "chart-id-6": {
+        "type":"image",
+        "content": "../images/created_at_bar_month.png"
+    },
+    "chart-id-7": "[HTML Block n]"
 }
