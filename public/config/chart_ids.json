@@ -17,11 +17,11 @@
     },
     "chart-id-5": {
         "type": "image",
-        "content": "../images/created_at_bar_days.png "
+        "content": "../public/images/created_at_bar_days.png "
     },
     "chart-id-6": {
         "type":"image",
-        "content": "../images/created_at_bar_month.png"
+        "content": "../public/images/created_at_bar_month.png"
     },
     "chart-id-7": "[HTML Block n]"
 }

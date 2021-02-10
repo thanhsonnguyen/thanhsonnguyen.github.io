@@ -129,12 +129,12 @@
             console.log("ready!");
             fetch_chart_configs()
         });
-
+        
 
         function fetch_chart_configs() {
             $.ajax({
                 type: 'GET',
-                url: '../../config/chart_ids.json',
+                url: '../public/config/chart_ids.json',
                 //data: {get_param: 'value'},
                 dataType: 'json',
                 success: function (data) {
