@@ -13,7 +13,11 @@ const showGraphs = () => {
     //   .catch((error) => {
     //     console.warn(error)
     //   })
-    $('.container').load("../../public/generated_html_files/" + serial_no + ".html")
+    $('.container').load("../../public/generated_html_files/" + serial_no + ".html",function( response, status, xhr ){
+      if(status == "error"){
+        alert('Incorrect Serial!')
+      }
+    })
     // main_iframe = document.getElementById('chartloader')
     // main_iframe.src = "../../public/generated_html_files/" + serial_no + ".html"
     // console.log("../../public/generated_html_files/" + serial_no + ".html")
