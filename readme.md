@@ -23,3 +23,20 @@ It will cache all the necessary files and dependencies in memory and serve the p
 There is a memory cap of 50 MB but data charts doesn't consume much memory as those are recreated on runtime and iframes can't be cached they are online only.
 
 
+Install NodeJS from https://nodejs.org/en/
+
+After node is installed please install the npm dependencies
+
+navigate to this directory and run following in Command Line or terminal
+
+npm install
+
+this wil install all the dependencies
+
+then to execute the scrapers or generators use following
+
+node html_generator_script.js
+
+or 
+
+node data_charts_scrapper.js
