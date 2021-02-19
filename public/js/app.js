@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", showGraphs);
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
-    navigator.serviceWorker.register('/public/service-worker-workbox.js').then(function (registration) {
+    navigator.serviceWorker.register('/public/sw.js').then(function (registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, function (err) {
@@ -112,3 +112,59 @@ function resetCookie(){
   document.cookie = "serial=" + "null"
   document.location.href="/public/index.html"
 }
+
+const prompt = document.querySelector('.prompt');
+const installButton = prompt.querySelector('.prompt__install');
+const closeButton = prompt.querySelector('.prompt__close');
+let installEvent;
+
+function getVisited() {
+  return localStorage.getItem('install-prompt');
+}
+
+function setVisited() {
+  localStorage.setItem('install-prompt', true);
+}
+
+// this event will only fire if the user does not have the pwa installed
+window.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+
+  // if no localStorage is set, first time visitor
+  if (!getVisited()) {
+    // show the prompt banner
+    prompt.style.display = 'block';
+
+    // store the event for later use
+    installEvent = event;
+  }
+});
+
+installButton.addEventListener('click', () => {
+  // hide the prompt banner
+  prompt.style.display = 'none';
+
+  // trigger the prompt to show to the user
+  installEvent.prompt();
+
+  // check what choice the user made
+  installEvent.userChoice.then((choice) => {
+    // if the user declined, we don't want to show the button again
+    // set localStorage to true
+    if (choice.outcome !== 'accepted') {
+      setVisited();
+    }
+
+    installEvent = null;
+  });
+});
+
+closeButton.addEventListener('click', () => {
+  // set localStorage to true
+  setVisited();
+
+  // hide the prompt banner
+  prompt.style.display = 'none';  
+
+  installEvent = null;
+});

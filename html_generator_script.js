@@ -28,7 +28,7 @@ function create_html(serial, layout) {
     container_html = ""
     for (j = 0; j < layout.length; j++) {
 
-        chart_element = "<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 p-2'><div id='" + layout[j] + "' class='card'><h5 class='card-title'></h5><div class='card-body' ></div></div></div>"
+        chart_element = "<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 card p-2'><div id='" + layout[j] + "' class='card-body'><h5 class='card-title'></h5><div class='card-body' ></div></div></div>"
         if (j % 2 == 0) {
             container_html += "<div class='row clearfix p-2'>" + chart_element
         } else {

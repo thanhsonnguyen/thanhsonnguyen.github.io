@@ -12,7 +12,7 @@
   <meta name="apple-mobile-web-app-status-bar" content="#db4938">
   <meta name="theme-color" content="#db4938">
   <title>eBenchmark PWA</title>
-  <link rel="icon" type="image/png" href="images/eBenchmark.PNG"/>
+  <link rel="icon" type="image/png" href="images/eBenchmark.PNG" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
@@ -27,7 +27,15 @@
           <li>Blog</li>
         </ul>
       </nav> -->
+    
     <div class="container" style="min-height: 100vh;">
+      <!-- install prompt -->
+      <div class="prompt card p-2">
+        <p>Do you want to add this site to your home screen?</p>
+        <button type="button" class="btn btn-success prompt__install">Yes Please</button>
+        <button type="button" class="btn btn-secondary prompt__close">No Thanks</button>
+      </div>
+
       <div class="row align-items-center h-100" style="min-height: 100vh;">
         <div class="col">
           <div class="mb-3">
