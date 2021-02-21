@@ -108,14 +108,17 @@ function checkCookie() {
   return null
 }
 
-function resetCookie(){
+function resetCookie() {
   document.cookie = "serial=" + "null"
-  document.location.href="/public/index.html"
+  document.location.href = "/public/index.html"
 }
+
+
 
 const prompt = document.querySelector('.prompt');
 const installButton = prompt.querySelector('.prompt__install');
 const closeButton = prompt.querySelector('.prompt__close');
+// var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'))
 let installEvent;
 
 function getVisited() {
@@ -131,10 +134,18 @@ window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
 
   // if no localStorage is set, first time visitor
-  if (!getVisited()) {
+  if (!getVisited() || !window.matchMedia('(display-mode: standalone)').matches) {
     // show the prompt banner
-    prompt.style.display = 'block';
 
+
+    setTimeout(function () {
+      prompt.style.display = 'block';
+    }, 5000);
+    // $('.prompt').fadeIn(2000)
+    // $('.prompt').animate({top:'=150px'}, "slow")
+
+    // $('#staticBackdrop').modal('show');
+    // myModal.show()
     // store the event for later use
     installEvent = event;
   }
@@ -143,6 +154,8 @@ window.addEventListener('beforeinstallprompt', (event) => {
 installButton.addEventListener('click', () => {
   // hide the prompt banner
   prompt.style.display = 'none';
+  // $('#staticBackdrop').modal('hide');
+  // myModal.hide()
 
   // trigger the prompt to show to the user
   installEvent.prompt();
@@ -164,7 +177,7 @@ closeButton.addEventListener('click', () => {
   setVisited();
 
   // hide the prompt banner
-  prompt.style.display = 'none';  
+  prompt.style.display = 'none';
 
   installEvent = null;
 });
