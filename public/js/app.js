@@ -6,7 +6,7 @@ const showGraphs = () => {
     serial_no = cookie_serial_no
     $('.container').load("../../public/generated_html_files/" + serial_no + ".html", function (response, status, xhr) {
       if (status == "error") {
-        alert('Incorrect Serial!')
+        alert('MÃ KHÔNG ĐÚNG!')
       }
       setCookie(serial_no)
     })
@@ -25,7 +25,7 @@ const showGraphs = () => {
       //   })
       $('.container').load("../../public/generated_html_files/" + serial_no + ".html", function (response, status, xhr) {
         if (status == "error") {
-          alert('Incorrect Serial!')
+          alert('MÃ KHÔNG ĐÚNG!')
         }
         setCookie(serial_no)
       })
