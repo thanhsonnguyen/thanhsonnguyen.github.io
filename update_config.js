@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-test_data = JSON.parse(fs.readFileSync('test_config.json'))
+test_data = JSON.parse(fs.readFileSync('temp_config.json'))
 
 // console.log(test_data[0])
 out_file = './public/config/chart_ids.json'

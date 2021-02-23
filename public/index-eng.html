@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#db4938">
+  <meta name="theme-color" content="#db4938">
+  <title>eBenchmark PWA</title>
+  <link rel="icon" type="image/png" href="images/eBenchmark.PNG" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+  <main>
+    <!-- <nav>
+        <h1>eBenchmark</h1>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+        </ul>
+      </nav> -->
+    <!-- install prompt -->
+    
+    <div class="container" style="min-height: 100vh;">
+      <div class="prompt card m-2 text-center">
+        <div class="card-body">
+          <h6 class="card-title">Do you want to add this site to your home screen?</h6>
+          <img src="images/eBenchmark.png" class="img rounded float-start" style="width: 100px; height: 100px;">
+          <div class="pt-5">
+            <button type="button" class="btn btn-success prompt__install">Yes Please</button>
+            <button type="button" class="btn btn-secondary prompt__close">No Thanks</button>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <!-- <div class="modal prompt fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Do you want to add this site to your home screen?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+              <img src="images/eBenchmark.PNG" class="img rounded float-start" style="width: 100px; height: 100px;">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary prompt__close" data-bs-dismiss="modal">No Thanks</button>
+              <button type="button" class="btn btn-primary prompt__install">Yes Please</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="row align-items-center h-100" style="min-height: 100vh;">
+        <div class="col">
+          <div class="mb-3">
+            <label for="serial_no_input" class="form-label text-center">Serial No:</label>
+            <input type="email" class="form-control " id="serial_no_input" placeholder="Serial number">
+            <br />
+            <button id="searchBtn" type="button" class="form-control btn btn-primary btn-lg">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe id="chartloader" src="" style="min-height: 100vh; min-width: 100vw; border: 0; display: none; "></iframe>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
