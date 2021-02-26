@@ -6,7 +6,7 @@ const showGraphs = () => {
     serial_no = cookie_serial_no
     $('.container').load("../../public/generated_html_files/" + serial_no + ".html", function (response, status, xhr) {
       if (status == "error") {
-        alert('MÃ KHÔNG ĐÚNG!')
+        alert('Incorrect Serial!')
       }
       setCookie(serial_no)
     })
@@ -25,7 +25,7 @@ const showGraphs = () => {
       //   })
       $('.container').load("../../public/generated_html_files/" + serial_no + ".html", function (response, status, xhr) {
         if (status == "error") {
-          alert('MÃ KHÔNG ĐÚNG!')
+          alert('Incorrect Serial!')
         }
         setCookie(serial_no)
       })
@@ -130,6 +130,7 @@ function setVisited() {
 
 // this event will only fire if the user does not have the pwa installed
 window.addEventListener('beforeinstallprompt', (event) => {
+  console.log('Install event initiated!')
   event.preventDefault();
 
   // if no localStorage is set, first time visitor
@@ -166,7 +167,8 @@ closeButton.addEventListener('click', () => {
   setVisited();
 
   // hide the prompt banner
-  prompt.style.display = 'none';  
+  prompt.style.display = 'none';
 
   installEvent = null;
 });
+

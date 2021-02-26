@@ -11,7 +11,7 @@ const {
         width: 768,
         height: 1024
     })
-    chart_config_file = 'test_config.json'
+    chart_config_file = 'temp_config.json'
     chart_config = []
     dashboard_urls = ['http://demo.edu.vn/divi/tap-1/#tap-1', 'http://demo.edu.vn/divi/tap-2/#tap-2', 'http://demo.edu.vn/divi/tap-3/#tap-3']
     for (let p = 0; p < dashboard_urls.length; p++) {
@@ -55,7 +55,7 @@ const {
     //             path: './public/images/' + selector_list_of_charts[i].name + `.png`
     //         })
     //     } catch (error) {
-    //         console.log(`couldnt take screenshot of element with index: ${selector_list_of_charts[i].name}. cause: `, error)
+    //         console.log(`couldn't take screenshot of element with index: ${selector_list_of_charts[i].name}. cause: `, error)
     //     }
     // }
     // const element = await page.$("#root > div > div.flex.flex-column.flex-full.relative.scroll-y > div.flex.flex-column.relative.full.flex-full > div > div > div > div:nth-child(3) > div > div > div");

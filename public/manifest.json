@@ -25,11 +25,11 @@
         "sizes": "96x96"
       },
       {
-        "src": "android/android-launchericon-72-72.png",
+        "src": "/public/images/android/android-launchericon-72-72.png",
         "sizes": "72x72"
       },
       {
-        "src": "android/android-launchericon-48-48.png",
+        "src": "/public/images/android/android-launchericon-48-48.png",
         "sizes": "48x48"
       },
       {
