@@ -6,7 +6,7 @@ const showGraphs = () => {
     serial_no = cookie_serial_no
     $('.container').load("../../public/generated_html_files/" + serial_no + ".html", function (response, status, xhr) {
       if (status == "error") {
-        alert('Incorrect Serial!')
+        alert('MÃ KHÔNG ĐÚNG!')
       }
       setCookie(serial_no)
     })
@@ -25,7 +25,7 @@ const showGraphs = () => {
       //   })
       $('.container').load("../../public/generated_html_files/" + serial_no + ".html", function (response, status, xhr) {
         if (status == "error") {
-          alert('Incorrect Serial!')
+          alert('MÃ KHÔNG ĐÚNG!')
         }
         setCookie(serial_no)
       })
@@ -140,6 +140,11 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
     // store the event for later use
     installEvent = event;
+  }
+  
+  if (window.matchMedia('(display-mode: standalone)').matches){
+    // if opened from app don't show banner
+    prompt.style.display = 'none';
   }
 });
 
