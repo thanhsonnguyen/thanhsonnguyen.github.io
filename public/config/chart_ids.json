@@ -158,5 +158,9 @@
     "chart-id-40": {
         "type": "image",
         "content": "../public/images/created_at_bar_days.png "
+    },
+    "chart-id-41": {
+        "type": "iframe",
+        "content": "https://superset.dwh.abnasia.org/superset/explore/?r=12&standalone=true"
     }
 }
