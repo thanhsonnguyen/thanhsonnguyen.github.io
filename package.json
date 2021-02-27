@@ -1,5 +1,5 @@
 {
-  "name": "ebenchmark-1",
+  "name": "eBenchmark by AbnAsia.org",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/stevennt/eBenchmark-1.git"
   },
-  "author": "Sr-vZ",
-  "license": "ISC",
+  "author": "AbnAsia.org",
+  "license": "AbnAsia.org",
   "bugs": {
     "url": "https://github.com/stevennt/eBenchmark-1/issues"
   },
