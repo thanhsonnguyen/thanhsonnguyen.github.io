@@ -146,5 +146,17 @@
     "chart-id-37": {
         "type": "data",
         "content": "<div class='vc_chart vc_line-chart wpb_content_element q' data-vc-tooltips='1' data-vc-animation='easeOutBounce' data-vc-type='line' data-vc-values='{&quot;labels&quot;:[&quot;2011&quot;,&quot; 2012&quot;,&quot; 2013&quot;,&quot; 2014&quot;,&quot; 2015&quot;,&quot; 2016&quot;,&quot; 2017&quot;,&quot; 2018&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;fillColor&quot;:&quot;rgba(244, 82, 77, 0.1)&quot;,&quot;strokeColor&quot;:&quot;#f2312b&quot;,&quot;pointColor&quot;:&quot;#f4524d&quot;,&quot;pointStrokeColor&quot;:&quot;#f4524d&quot;,&quot;highlightFill&quot;:&quot;#f23630&quot;,&quot;highlightStroke&quot;:&quot;#eb150e&quot;,&quot;pointHighlightFill&quot;:&quot;#eb150e&quot;,&quot;pointHighlightStroke&quot;:&quot;#eb150e&quot;,&quot;data&quot;:[&quot;5.28&quot;,&quot; 5.01&quot;,&quot; 4.92&quot;,&quot; 4.97&quot;,&quot; 5.11&quot;,&quot; 5.39&quot;,&quot; 5.29&quot;,&quot; 5.37&quot;]}]}'>\n\t<h2 class='wpb_heading'>Thương mại</h2>\n\t<div class='wpb_wrapper'>\n\t\t<canvas class='vc_line-chart-canvas' width='726' height='726' style=''></canvas>\n\t</div>\n</div>"
+    },
+    "chart-id-38": {
+        "type": "iframe",
+        "content": "https://metabase.dwh.abnasia.org/public/question/12ec79a2-ef46-41a2-a8ff-49d4ebf22f05"
+    },
+    "chart-id-39": {
+        "type": "iframe",
+        "content": "https://datawrapper.dwcdn.net/Au848/1/"
+    },
+    "chart-id-40": {
+        "type": "image",
+        "content": "../public/images/created_at_bar_days.png "
     }
 }
